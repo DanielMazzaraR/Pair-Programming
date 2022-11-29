@@ -1,0 +1,16 @@
+.middle-part {
+  height: 0%;
+  width: 100%;
+  transition: height 1s;
+}
+
+.middle-part-active {
+  height: 85%;
+  width: 100%;
+  background-color: #f0eada;
+  transition: height 1s;
+}
+
+h1 {
+  margin: 0px;
+}

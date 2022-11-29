@@ -1,38 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
+.top-part {
+  height: 85%;
+  width: 100%;
+  background-image: url(./Images/pexels-joël-super-2315265.jpg);
+  background-size: cover;
+  transition: height 1s;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-part-active {
+  height: 0%;
+  width: 100%;
+  background-image: url(./Images/pexels-joël-super-2315265.jpg);
+  background-size: cover;
+  transition: height 1s;
+  pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-part-title-active {
+    margin-top: 0px;
+    height: 0px;
+    padding: 0px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-family: "Orbitron", sans-serif;
+    color: #e83a0e;
+    font-size: 90px;
+    opacity: 0;
+    transition: opacity 1s;
+    pointer-events: none;
+  }
+
+.top-part-title {
+  margin-top: 0px;
   display: flex;
-  flex-direction: column;
+  align-self: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  font-family: "Orbitron", sans-serif;
+  color: #e83a0e;
+  padding-top: 25vh;
+  font-size: 90px;
+  opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.buttonTopPart {
+  background-color: #ffbe81;
+  border-radius: 100px;
+  box-shadow: #e83a0e 0 -25px 18px -14px inset, #e83a0e 0 1px 2px,
+    #e83a0e 0 2px 4px, #e83a0e 0 4px 8px, #e83a0e 0 8px 16px,
+    #e83a0e 0 16px 32px;
+  color: #e83a0e;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  padding: 7px 50px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  align-self: center;
+  margin-left: 35.33vw;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
+  opacity: 1;
+  pointer-events:fill;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.buttonTopPart-active {
+    background-color: #ffbe81;
+    border-radius: 100px;
+    box-shadow: #e83a0e 0 -25px 18px -14px inset, #e83a0e 0 1px 2px,
+      #e83a0e 0 2px 4px, #e83a0e 0 4px 8px, #e83a0e 0 8px 16px,
+      #e83a0e 0 16px 32px;
+    color: #e83a0e;
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+    padding: 7px 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    align-self: center;
+    margin-left: 35.33vw;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility opacity 1s;
+    margin-top: 0px;
+    height: 0px;
+    padding: 0px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.button-33:hover {
+  box-shadow: rgba(255, 94, 0, 0.397) 0 -25px 18px -14px inset,
+    rgba(255, 94, 0, 0.397) 0 1px 2px, rgba(255, 94, 0, 0.397) 0 2px 4px,
+    rgba(255, 94, 0, 0.397) 0 4px 8px, rgba(255, 94, 0, 0.397) 0 8px 16px,
+    rgba(255, 94, 0, 0.397) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+  
+
+.bottom-part {
+  height: 15%;
+  width: 100%;
+  background-color: #151b26;
 }
