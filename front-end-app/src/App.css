@@ -72,13 +72,10 @@
   transition: all 250ms;
   border: 0;
   font-size: 20px;
-  user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
-  align-self: center;
   margin-left: 35.33vw;
+  margin-right: 35.33vw;
   display: flex;
-  align-self: center;
   align-items: center;
   justify-content: center;
   visibility: visible;
@@ -112,13 +109,14 @@
     justify-content: center;
     visibility: hidden;
     opacity: 0;
-    transition: visibility opacity 1s;
     margin-top: 0px;
     height: 0px;
     padding: 0px;
+    transition: visibility opacity height margin-top padding 1s;
+    
   }
 
-.button-33:hover {
+.buttonTopPart:hover {
   box-shadow: rgba(255, 94, 0, 0.397) 0 -25px 18px -14px inset,
     rgba(255, 94, 0, 0.397) 0 1px 2px, rgba(255, 94, 0, 0.397) 0 2px 4px,
     rgba(255, 94, 0, 0.397) 0 4px 8px, rgba(255, 94, 0, 0.397) 0 8px 16px,

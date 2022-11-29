@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <div className={topPart_class}>
         <h1 className={toppartTitle}>Prepare for your new journey</h1>
-        <button className={buttonTopPart} role="button" onClick={onClickOurFlightsHandler}>See our flights from Spain</button>
+        <div className={buttonTopPart} role="button" onClick={onClickOurFlightsHandler}>See our flights from Spain</div>
       </div>
       <MiddlePart nameClass = {middlePart_class}/>
       <footer className="bottom-part">

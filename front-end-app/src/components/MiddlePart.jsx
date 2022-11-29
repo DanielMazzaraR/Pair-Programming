@@ -5,7 +5,7 @@ import OriginsTable from './MiddleComponents/OriginsTable.jsx';
 function MiddlePart (props) {
 
     return (<div className={props.nameClass}>
-        <OriginsTable/>
+        <OriginsTable nameClass = {props.nameClass}/>
     </div>)
 }
 

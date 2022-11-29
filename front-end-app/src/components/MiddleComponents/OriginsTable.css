@@ -1,0 +1,11 @@
+.originsTable-toprow {
+    display: flex;
+    padding-top: 10%;
+    justify-content: space-around;
+}
+
+.originsTable-bottomrow {
+    display: flex;
+    padding-top: 10%;
+    justify-content: space-around;
+}
