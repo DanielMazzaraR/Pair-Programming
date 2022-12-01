@@ -3,31 +3,27 @@ import OriginsDropdown from "./Filters/OriginsDropdown";
 import DestinationDropdown from "./Filters/DestinationDropdown";
 import AirlineDropdown from "./Filters/Airlineropdown";
 
-function AllFilters(props) {
+function AllFilters(params) {
   const [currentOrigin, setOrigin] = useState("");
   const [currentDestination, setDestination] = useState("");
   const [currentAirline, setAirline] = useState("");
-  const [updateState, setUpdateState] = useState();
 
-  //TODO: Actualizacion rapida de los useState
+  //TODO: Actualizacion rapida de los useState => Hay que utilizar el mismo prop o una variable de JavaScript
   //TODO: que el valor se guarde en la variable en el primer render
-
-  useEffect(() => {
-    props.onParentCallback(currentOrigin, currentDestination, currentAirline);
-
-    console.log(currentOrigin, currentDestination, currentAirline);
-  }, [currentOrigin, currentDestination, currentAirline]);
 
   const onOriginsDropdownHandler = (props) => {
     setOrigin((prevOrigin) => (prevOrigin = props));
+    params.onParentCallback(props, currentDestination, currentAirline);
   };
 
   const onDestinationDropdownHandler = (props) => {
-    setDestination(props);
+    setDestination((prevOrigin) => (prevOrigin = props));
+    params.onParentCallback(currentOrigin, props, currentAirline);
   };
 
   const onAirlineDropdownHandler = (props) => {
-    setAirline(props);
+    setAirline((prevOrigin) => (prevOrigin = props));
+    params.onParentCallback(currentOrigin, currentDestination, props);
   };
 
   return (

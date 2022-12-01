@@ -1,0 +1,18 @@
+.flight-card {
+    margin-top: 10px;
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(224, 201, 125);
+    border-radius: 12px;
+}
+.flight-title{
+    padding-left: 5vw;
+}
+
+.flight-price {
+    padding-right: 5%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+}
