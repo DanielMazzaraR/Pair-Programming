@@ -1,5 +1,12 @@
 .flight-list__base{
-    width: 50vw;
+    width: 90%;
     background-color: antiquewhite;
-    display: none;
+}
+
+.flight-list__filters {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }

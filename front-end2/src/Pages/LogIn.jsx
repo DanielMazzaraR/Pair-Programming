@@ -1,15 +1,16 @@
-import React, { useState, useRef } from "react";
-import { Link, Route, Routes, Navigate } from "react-router-dom";
-import FlightList from "./FlightList";
+import React, { useRef } from "react";
+import { useNavigate} from "react-router-dom";
 
 function LogIn(props) {
-  const [currentUsers, setCurrentUsers] = useState();
+
+
   const inputUserRef = useRef();
+  const navigate = useNavigate();
 
   const onSubmithandler = (event) => {
     if(props.user === inputUserRef.current.value){
         event.preventDefault()
-        props.AppCallBack();
+        navigate('/flights');
     }
   };
 
