@@ -13,13 +13,9 @@ function AllFilters(props) {
   //TODO: que el valor se guarde en la variable en el primer render
 
   useEffect(() => {
-        props.onParentCallback(
-          currentOrigin,
-          currentDestination,
-          currentAirline
-        );
+    props.onParentCallback(currentOrigin, currentDestination, currentAirline);
 
-        console.log(currentOrigin, currentDestination, currentAirline)
+    console.log(currentOrigin, currentDestination, currentAirline);
   }, [currentOrigin, currentDestination, currentAirline]);
 
   const onOriginsDropdownHandler = (props) => {
